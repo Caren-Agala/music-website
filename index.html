@@ -23,8 +23,32 @@
             <div class="left-col">
                 <h1>THE <br> REAL <br> SOUND</h1>
             </div>
-            <div class="right-col"></div>
+            <div class="right-col">
+                <p>Click here to listen</p>
+                <img src="images/play-button.png" alt="play-button" id="icon">
+            </div>
         </div>
     </div>
+
+    <audio id="mySong">
+        <source src="images/Y2Mate.is - Kendrick Lamar, SZA - All The Stars-JQbjS0_ZfJ0-128k-1660510510870.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function() {
+            if(mySong.paused){
+                mySong.play();
+                icon.src = "images/pause.png"
+            }else{
+                mySong.pause();
+                icon.src = "images/play-button.png"
+            }
+
+        }
+    </script>
+
 </body>
 </html>

@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    paddding: 0;
+    padding: 0;
     font-family: sans-serif;
 }
 
@@ -40,4 +40,18 @@
     text-decoration: underline;
     font-size: medium;
     color: black;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+}
+.left-col{
+    margin-left: 6%;
+}
+.left-col h1{
+    font-size: 90px;
+    color: #fff;
+    line-height: 110;
+    float: left;
 }
